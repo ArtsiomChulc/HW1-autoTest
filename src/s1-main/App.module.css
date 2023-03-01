@@ -2,10 +2,30 @@
     --header_height: 60px;
 }
 
-.hw {
-
+.hw,
+.hwTitle {
+    max-width: 1070px;
+    padding: 15px 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #e1dbdb;
 }
+
+.hw {
+    height: 100vh;
+}
+
+/* .hw div:first-child {
+    display: flex;
+    flex-direction: column;
+} */
 
 .hwTitle {
-
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
 }
+
+img {}

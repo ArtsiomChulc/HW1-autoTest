@@ -12,9 +12,19 @@ import avatar from './avatar.png'
 * 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx
 * 5 - сделать стили в соответствии с дизайном
 * */
-
+type UserType = {
+    avatar: string
+    name: string
+}
 // нужно создать правильный тип вместо any
-export type MessageType = any
+export type MessageType = {
+    id: number
+    user: UserType
+    message: {
+        text: string
+        time: string
+    }
+}
 
 // структуру объекта не менять
 export const message0: MessageType = {
