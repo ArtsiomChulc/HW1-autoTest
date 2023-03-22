@@ -11,8 +11,8 @@
     flex-direction: column;
 }
 
-.hw {
-    height: 100vh;
+hr {
+    margin-bottom: 10px;
 }
 
 /* .hw div:first-child {

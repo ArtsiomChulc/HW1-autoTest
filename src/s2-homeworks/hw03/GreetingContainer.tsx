@@ -4,13 +4,18 @@ import { UserType } from './HW3'
 
 type GreetingContainerPropsType = {
     users: UserType[] // need to fix any
-    addUserCallback: (value: string) => void // need to fix any
+    addUserCallback: (name: string) => void // need to fix any
 }
 
-export const pureAddUser = (name: string, setError: (value: string) => void, setName: (value: string) => void, addUserCallback: (value: string) => void) => {
-    console.log(name);
-    addUserCallback(name)
-
+export const pureAddUser = (name: string, setError: (name: string) => void, setName: (value: string) => void, addUserCallback: (value: string) => void) => {
+    // addUserCallback(name)
+    const trimName = name.trim()
+    if (trimName.length === 0) {
+        setError('Ошибка! Введите имя!')
+    } else {
+        addUserCallback(trimName)
+        setName('')
+    }
 
     // если имя пустое - показать ошибку: setError('Ошибка! Введите имя!'),
     // иначе - добавить юзера при помощи addUserCallback и очистить инпут засетав ''
@@ -18,7 +23,12 @@ export const pureAddUser = (name: string, setError: (value: string) => void, set
     // ЕСЛИ НЕ БУДЕТ ПОЛУЧАТЬСЯ, НЕ РАССТРАИВАЙСЯ. НА ЧЕТВЕРТОМ ЗАНЯТИИ ПО ТУДУЛИСТУ НАУЧИМ), НО ВСЕ ТАКИ ПОПЫТАЙСЯ))
 }
 
-export const pureOnBlur = (name: string, setError: (value: string) => void) => { // если имя пустое - показать ошибку
+export const pureOnBlur = (name: string, setError: (value: string) => void) => {
+    if (name.length === 0) {
+        setError('Введите имя!')
+    }
+
+    // если имя пустое - показать ошибку
 }
 
 export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: () => void) => {
@@ -65,9 +75,11 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     const totalUsers = users.length // need to fix
     const lastUserName = users.map(el => {
         return (
-            <li>
+            <span>
                 {el.name}
-            </li>
+            </span>
+
+
         )
     }) // need to fix
 

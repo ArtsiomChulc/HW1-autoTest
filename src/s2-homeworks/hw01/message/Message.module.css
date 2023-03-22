@@ -24,14 +24,14 @@
 	width: 527px;
 	display: flex;
 	flex-direction: column;
-	border-radius: 7px;
 	padding: 0px 25px 8px 13px;
 	position: relative;
 	word-wrap: break-word;
 	border: 0;
 }
 
-.text:after {
+
+/* .text:after {
 	content: '';
 	width: 0;
 	height: 0;
@@ -43,7 +43,7 @@
 	top: 40px;
 	transform: rotate(135deg);
 	z-index: -1;
-}
+} */
 
 .name {
 	flex: 1;
