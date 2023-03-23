@@ -22,7 +22,7 @@
 .input:focus {}
 
 .errorInput {
-	border: 1px solid #CC0000;
+	border: 5px solid #CC0000;
 	border-radius: 5px;
 	width: 370px;
 	height: 36px;
