@@ -30,7 +30,7 @@ export const pureAddUserCallback = (name: string, setUsers: (x: UserType[]) => v
         // нужно создать новый объект соответствующий типу UserType
         // не забыть   сгенеририовать _id и вставить пришедший в функцию name
     }
-    setUsers([user, ...users])
+    setUsers([...users, user])
     //засетайЮзеров([...старые users, и наш новый user])
 }
 
