@@ -23,19 +23,19 @@ export type UserType = {
     name: string // need to fix any
 }
 
-export const pureAddUserCallback = (name: string, setUsers: any, users: UserType[]) => { // need to fix any
+export const pureAddUserCallback = (name: string, setUsers: (x: UserType[]) => void, users: UserType[]) => { // need to fix any
     const user = {
         _id: v1(), name: name
         // need to fix
         // нужно создать новый объект соответствующий типу UserType
         // не забыть   сгенеририовать _id и вставить пришедший в функцию name
     }
+    setUsers([user, ...users])
     //засетайЮзеров([...старые users, и наш новый user])
-    setUsers([...users, user])
 }
 
 const HW3 = () => {
-    const [users, setUsers] = useState<UserType[]>([]) // need to fix any
+    const [users, setUsers] = useState<Array<UserType>>([]) // need to fix any
 
     const addUserCallback = (name: string) => { // need to fix any
         pureAddUserCallback(name, setUsers, users)
