@@ -1,11 +1,14 @@
 .radio {
+    background: #212A34;
 }
 
 .radio::before {
+
 }
 
 
 .radio:checked::before {
+
 }
 
 .label {
