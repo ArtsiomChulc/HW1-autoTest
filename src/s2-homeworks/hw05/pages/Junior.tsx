@@ -3,16 +3,16 @@ import HW6 from "../../hw06/HW6";
 import HW2 from "../../hw02/HW2";
 import HW7 from '../../hw07/HW7'
 import HW8 from '../../hw08/HW8'
-// import HW9 from '../../hw09/HW9'
+import HW9 from '../../hw09/HW9'
 
 function Junior() {
     return (
         <div id={'hw5-page-junior'}>
-            <HW2/>
+            <HW2 />
             <HW6 />
             <HW7 />
             <HW8 />
-            {/*<HW9 />*/}
+            <HW9 />
         </div>
     )
 }
