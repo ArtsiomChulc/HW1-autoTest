@@ -2,7 +2,7 @@ import React from 'react'
 import HW3 from "../../hw03/HW3";
 import HW4 from "../../hw04/HW4";
 import HW10 from '../../hw10/HW10'
-// import HW11 from '../../hw11/HW11'
+import HW11 from '../../hw11/HW11'
 // import HW12 from '../../hw12/HW12'
 // import HW13 from '../../hw13/HW13'
 // import HW14 from '../../hw14/HW14'
@@ -14,7 +14,7 @@ function JuniorPlus() {
             <HW3/>
             <HW4/>
             <HW10 />
-            {/*<HW11 />*/}
+            <HW11 />
             {/*<HW12 />*/}
             {/*<HW13 />*/}
             {/*<HW14 />*/}
