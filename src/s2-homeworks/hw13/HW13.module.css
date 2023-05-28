@@ -1,22 +1,43 @@
+.wrapBlock {
+    margin: 100px 70px;
+}
+
 .buttonsContainer {
+    display: flex;
+    gap: 24px;
 }
 
 .responseContainer {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    gap: 90px;
 }
 
 .imageContainer {
+    object-fit: contain;
 }
 
 .image {
 }
 
 .textContainer{
+    align-self: center;
+    color: #000000;
+    font-weight: 500;
 }
 
 .code {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 12px;
 }
 
 .text {
+
+    font-size: 16px;
+    line-height: 20px;
+
 }
 .info {
 }
