@@ -1,7 +1,17 @@
-.tech {
+.blockWrap {
+    margin-bottom: 50px;
+}
 
+.tech {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
 }
 
 .loading {
-
+    display: inline-block;
+    width: 100px;
+    margin-left: auto;
 }
