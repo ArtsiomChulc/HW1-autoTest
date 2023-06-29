@@ -36,7 +36,6 @@ const SuperSort: React.FC<SuperSortPropsType> = (
     const down = '1' + value
 
     const onChangeCallback = () => {
-        console.log(sort, down, up)
         onChange(pureChange(sort, down, up))
     }
 
