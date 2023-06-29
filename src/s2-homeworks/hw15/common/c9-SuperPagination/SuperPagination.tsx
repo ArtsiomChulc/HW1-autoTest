@@ -24,7 +24,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
     }
 
     const onChangeSelect = (event: ChangeEvent<HTMLSelectElement>) => {
-debugger
+
         // пишет студент
         onChange(page, +event.currentTarget.value)
     }
@@ -34,13 +34,19 @@ debugger
             <Pagination
                 id={id + '-pagination'}
                 sx={{
+                    marginBottom: '15px',
+                    marginRight: '15px'
                     // стили для Pagination // пишет студент
                 }}
                 page={page}
+                variant={'outlined'}
                 count={lastPage}
                 onChange={onChangeCallback}
-                hideNextButton
-                hidePrevButton
+                showFirstButton
+                showLastButton
+                color={'secondary'}
+                // hideNextButton
+                // hidePrevButton
             />
 
             <span className={s.text1}>
