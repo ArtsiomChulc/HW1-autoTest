@@ -8,10 +8,13 @@
 
 .techHeader {
     width: 50vw;
+    display: flex;
+    gap: 20px;
 }
 
 .developerHeader {
-
+    display: flex;
+    gap: 20px;
 }
 
 .row {
@@ -24,4 +27,8 @@
 
 .loading {
 
+}
+
+.icon {
+    width: 20px;
 }
